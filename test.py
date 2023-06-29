@@ -39,11 +39,11 @@ conn = duckdb.connect('md:?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW
 result = conn.execute("SELECT * FROM 's3://sudsomni1/sales_demo.csv'").df()
 
 # Fetch all rows from the result set
-rows = result.fetchall()
+#rows = result.fetchall()
 
 # Display the retrieved data in Streamlit
 st.write("Sales Data:")
-st.write(rows)
+st.write(result)
 
 # Close the connection
 conn.close()
