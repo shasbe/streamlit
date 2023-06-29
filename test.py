@@ -13,5 +13,5 @@ st.title('Uber pickups in sea')
 #con = duckdb.connect('md:mydatabase')
 
 # run a query to check verify that you are connected
-con.sql("SHOW DATABASES").show()
+st.write (con.sql("SHOW DATABASES").show())
 #con.sql("SELECT * FROM 's3://sudsomni1/sales_demo.csv'").show()
