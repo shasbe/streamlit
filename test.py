@@ -1,7 +1,7 @@
+import duckdb
 import streamlit as st
 import pandas as pd
 import numpy as np
-import duckdb
 
 st.title('Uber pickups in sea')
 
