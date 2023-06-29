@@ -22,8 +22,9 @@ import duckdb
 import streamlit as st
 
 # Create a DuckDB connection
+# conn = duckdb.connect(database=':memory:')
+
 conn = duckdb.connect('md:?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uIjoic2hhc2JlLmdtYWlsLmNvbSIsImVtYWlsIjoic2hhc2JlQGdtYWlsLmNvbSIsInVzZXJJZCI6ImU4NzhlMTJjLWZiYzAtNDJiMS05NjhlLWU3ZmJjMTk2NjQzYyIsImlhdCI6MTY4ODAwMzg2MSwiZXhwIjoxNzE5NTYxNDYxfQ.PTwhFvOt9h88AP7EzgU1g1ZidzBy-_Av0ZBXybSzflU')
-#conn = duckdb.connect(database=':memory:')
 
 # Create a table
 #conn.execute("CREATE TABLE employees (id INTEGER, name VARCHAR(100), salary FLOAT)")
