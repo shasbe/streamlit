@@ -36,7 +36,7 @@ conn = duckdb.connect('md:?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW
 
 # Perform a SELECT query
 #result = conn.execute("SELECT * FROM employees")
-result = conn.execute("SELECT * FROM 's3://sudsomni1/sales_demo.csv'")
+result = conn.execute("SELECT * FROM 's3://sudsomni1/sales_demo.csv'").df()
 
 # Fetch all rows from the result set
 rows = result.fetchall()
